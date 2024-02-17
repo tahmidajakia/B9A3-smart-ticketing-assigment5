@@ -1,19 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart ticketing site</title>
+
+    <!-- daisy UI and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
-    <header>
+    <header class="w-[1173px] mx-auto">
+        <!-- navbar -->
+        <div>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class=" text-4xl font-extrabold ">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn px-6 border-[#1DD100] text-[#1DD100]">Bus <img src="images/bus-icon.png"
+                            alt=""></button>
+                </div>
+            </div>
+
+            <!-- hero -->
+            <div class="hero min-h-screen bg-base-200 rounded-[32px] bg-[url('images/banner.png')] ">
+                <div class="text-center">
+                    <div class="">
+                        <h1 class="text-6xl font-extrabold text-white">End-to-End Travel With <br>
+                            <span class="text-[#1DD100]">P Paribahan</span>
+                        </h1>
+                        <p class="py-6 text-white font-normal text-lg">Yes,you can run unit tests and view the result
+                            directly within the app.The <br> integrated testing features allow for a streamlined.</p>
+                        <button class="py-3 px-6 rounded-lg bg-[#1DD100] text-black text-xl font-bold border-none">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- offer section -->
+            <div>
+                <h1>Best offers for you</h1>
+                <div class="flex justify-between">
+                    <div class="bg-[#FFBF0F] flex rounded-xl justify-between  h-[220px] pl-20 pr-10 space-x-8 items-center">
+                        <h1 class="justify-center items-center"><span class="font-black text-4xl">15% OFF</span> <br>
+                            <span class="text-xl font-semibold">on your next purchase</span> <br> <span
+                                class="font-medium text-lg opacity-70">use by january 2024</span></h1>
+                        <img src="images/cupon-devider.png" alt="">
+                        <h1 class=""><span class="text-3xl font-bold">New15</span> <br><span
+                                class="font-medium text-xl opacity-70">Cupon code</span></h1>
+                    </div>
+                    <div class="bg-[#F78C9C] flex rounded-xl justify-between  h-[220px] px-20 space-x-8 items-center">
+                        <h1 class="justify-center items-center"><span class="font-black text-4xl">15% OFF</span> <br>
+                            <span class="text-xl font-semibold">on your next purchase</span> <br> <span
+                                class="font-medium text-lg opacity-70">use by january 2024</span></h1>
+                        <img src="images/cupon-devider.png" alt="">
+                        <h1 class=""><span class="text-3xl font-bold">New15</span> <br><span
+                                class="font-medium text-xl opacity-70">Cupon code</span></h1>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
 
     </header>
     <main>
+        <section class="w-[1173px] mx-auto">
+
+        </section>
 
     </main>
-    <footer>
-        
+    <footer class="bg-black mt-24">
+        <section class="w-[1173px] mx-auto items-center justify-center">
+            <div class="flex justify-between text-white">
+                <div>
+                    <h1>P-Ticket</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in!</p>
+                </div>
+                <div>
+                    <h1>Download our app</h1>
+                    <div class="flex border-white border-2 px-4 py-3 gap-3">
+                        <div>
+                            <img src="images/playstore.png" alt="">
+                        </div>
+                        <div>
+                            <h3>GET IT ON</h3>
+                            <h1>Google Play</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between text-white">
+                <h3>@all rights reserved,P-Ticket service limited.2024</h3>
+                <div class="flex gap-3">
+                    <h3>Terms & condition</h3>
+                    <h3>Return & refund policy</h3>
+                    <h3>Privacy policy</h3>
+                </div>
+
+            </div>
+
+        </section>
+
     </footer>
 </body>
+
 </html>
