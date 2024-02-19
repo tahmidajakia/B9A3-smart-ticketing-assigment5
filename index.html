@@ -143,7 +143,7 @@
                 <img src="images/info-devider.png" alt="">
                 <div class="pt-40 space-y-4 pr-24">
                     <img src="images/fare.png" alt="">
-                    <h1><span class="font-bold text-3xl">550 TK</span> <br> <span
+                    <h1><span class="font-bold text-3xl" id="main-cost">550 TK</span> <br> <span
                             class="text-2xl font-semibold opacity-70">Per Seats</span></h1>
                 </div>
             </div>
@@ -172,17 +172,17 @@
                     </div>
                     <div class="flex items-center gap-5">
                         <h1 class="w-[50px] text-center">A</h1>
-                        <p id="A1 alphabet" class="btn add-btn w-[110px] ">A1</p>
-                        <p id="A2 alphabet" class="btn add-btn w-[110px] ">A2</p>
-                        <p id="A3 alphabet" class="btn add-btn w-[110px] ">A3</p>
-                        <p id="A4 alphabet" class="btn add-btn w-[110px] ">A4</p>
+                        <p id="A1" class="btn add-btn w-[110px] ">A1</p>
+                        <p id="A2" class="btn  add-btn w-[110px] ">A2</p>
+                        <p id="A3" class="btn add-btn w-[110px] ">A3</p>
+                        <p id="A4" class="btn add-btn w-[110px] ">A4</p>
                     </div>
                     <div class="flex items-center  gap-5 ">
                         <h1  class="w-[50px] text-center">B</h1>
                         <p id="B1" class="btn add-btn w-[110px]">B1</p>
-                        <p id="B2" class="btn add-btn w-[110px]">B2</p>
-                        <p id="B3" class="btn add-btn w-[110px]">B3</p>
-                        <p id="B4" class="btn add-btn w-[110px]">B4</p>
+                        <p id="B2" class="btn add-btn  w-[110px]">B2</p>
+                        <p id="B3" class="btn add-btn  w-[110px]">B3</p>
+                        <p id="B4" class="btn add-btn  w-[110px]">B4</p>
                     </div>
                     <div class="flex items-center  gap-5">
                         <h1  class="w-[50px] text-center">C</h1>
@@ -248,15 +248,16 @@
 
                     <div class="bg-slate-100 rounded-xl space-y-8 p-5">
                         <div class="flex justify-between">
-                            <h1>Seat <sup id="seat-count">0</sup></h1>
+                            <h1>Seat <sup id="seat-count" class="bg-[#1DD100] pl-3 pr-3 rounded-xl text-white">0</sup></h1>
                             <h1>Class</h1>
                             <h1>Price</h1>
                         </div>
+                        <ul id="selected-seat" class="selected-seat"></ul>
                         <hr class="border-dashed">
                         <hr>
                         <div class="flex justify-between">
-                            <h1>Total Price</h1>
-                            <h1>BDT</h1>
+                            <h1>Total Price <span id="">0</span></h1>
+                            <h1>BDT <span id="total-cost">0</span></h1>
                         </div>
                         <div>
                             <div class="join">
@@ -265,8 +266,8 @@
                               </div>
                         </div>
                         <div class="flex justify-between">
-                            <h1>Grand Total</h1>
-                            <h1>BDT</h1>
+                            <h1>Grand Total <span id="">0</span></h1>
+                            <h1>BDT <span id="">0</span></h1>
                         </div>
                     </div>
                     <div class="space-y-4">
@@ -283,8 +284,14 @@
                     </div>
                     <button class="btn w-full bg-[#1DD100] text-white">Next</button>
                     <div class="flex justify-between">
-                        <h1>Terms and Condition</h1>
-                        <h1>Cancellation policy</h1>
+                        <div>
+                            <h1 class="opacity-70">Terms and Condition</h1>
+                            <hr>
+                        </div>
+                        <div>
+                            <h1 class="opacity-70">Cancellation policy</h1>
+                            <hr>
+                        </div>
                     </div>
                 </div>
             </div>
