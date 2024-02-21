@@ -120,26 +120,7 @@ function next(){
 
 }
 
-// function play(){
-//     const headerScreen = document.getElementById("header-section");
-//     headerScreen.classList.add('hidden');
-    
-// }
-// function play(){
-//     const sectionFirst = document.getElementById("section-first");
-//     sectionFirst.classList.add('hidden');
-    
-// }
-// function play(){
-//     const homeSection = document.getElementById("home-screen");
-//     homeSection.classList.add('hidden');
-    
-// }
-// function play(){
-//     const footerSection = document.getElementById("footer-screen");
-//     footerSection.classList.add('hidden');
-    
-// }
+
 
 
 
